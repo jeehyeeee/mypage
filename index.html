@@ -19,7 +19,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
+    <title>스파르타피디아</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
 
@@ -63,10 +63,14 @@
         margin: 20px auto;
       }
       .mypost {
-        width: 500px;
+        width: 95%;
+        max-width: 500px;
         margin: 20px auto;
         padding: 20px;
         box-shadow: 0px 0px 3px 0px gray;
+      }
+      .form-floating {
+        margin-bottom: 20px;
       }
       .mybtn {
         margin-top: 20px;
@@ -93,17 +97,28 @@
           id="floatingTextarea"
         ></textarea>
         <label for="floatingTextarea">영화url</label>
-        <div class="form-floating">
-          <textarea
-            class="form-control"
-            placeholder="Leave a comment here"
-            id="floatingTextarea"
-          ></textarea>
-          <label for="floatingTextarea">코멘트</label>
-          <div class="mybtn">
-            <button type="button" class="btn btn-dark">기록하기</button>
-            <button type="button" class="btn btn-outline-dark">닫기</button>
-          </div>
+      </div>
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">별점</label>
+        <select class="form-select" id="inputGroupSelect01">
+          <option selected>-- 선택하기 --</option>
+          <option value="1">⭐</option>
+          <option value="2">⭐⭐</option>
+          <option value="3">⭐⭐⭐</option>
+          <option value="4">⭐⭐⭐⭐</option>
+          <option value="5">⭐⭐⭐⭐⭐</option>
+        </select>
+      </div>
+      <div class="form-floating">
+        <textarea
+          class="form-control"
+          placeholder="Leave a comment here"
+          id="floatingTextarea"
+        ></textarea>
+        <label for="floatingTextarea">코멘트</label>
+        <div class="mybtn">
+          <button type="button" class="btn btn-dark">기록하기</button>
+          <button type="button" class="btn btn-outline-dark">닫기</button>
         </div>
       </div>
     </div>
